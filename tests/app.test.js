@@ -56,7 +56,7 @@ describe("Controller Functions tests", () => {
   });
 });
 
-describe("API endpoint tests", async () => {
+describe("API endpoint tests", () => {
   it("GET /employees, should get all employees", async () => {
     const res = await request(server).get("/employees");
     expect(res.status).toBe(200);
