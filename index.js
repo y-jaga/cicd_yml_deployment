@@ -15,7 +15,7 @@ app.get("/employees", async (req, res) => {
 });
 
 //Endpoint to get employees details by id
-app.get("/employees/:id", async (req, res) => {
+app.get("/employees/details/:id", async (req, res) => {
   let employee = getEmployeesById(parseInt(req.params.id));
 
   res.json({ employee });
